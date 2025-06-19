@@ -5,9 +5,7 @@ import AwaitComponent from "./AwaitComponent";
 function HomePage() {
   return (
     <>
-      <Link prefetch={false} href="/about">
-        go test
-      </Link>
+      <Link href="/about">go test</Link>
 
       <Suspense fallback={<div>LOADING</div>}>
         <AwaitComponent />
